@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.countdown-container {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 500px;
+ }
+ h1{
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+ }
+.countdown{
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+#days {
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  color: #333;
+  padding: 0 20px;
+  border-radius: 12px;
+  display: inline-block;
+  min-width: 80px;
+  box-shadow: 0 4px 15px rgba(255, 152, 158, 0.4);
+}
+@media (max-width: 480px) {
+.countdown-container {
+  padding: 20px;
+}
+h1 {
+  font-size: 1.5rem;
+}
+.countdown {
+  font-size: 2.5rem;
+}
+}
