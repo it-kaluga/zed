@@ -1,3 +1,5 @@
+let button = document.getElementById('button');
+
 function updateCountdown() {
   const today = new Date();
   const currentYear = today.getFullYear();
@@ -8,3 +10,10 @@ function updateCountdown() {
 }
 updateCountdown();
 setInterval(updateCountdown, 60000);
+
+
+
+
+button.onclick = ()=>{
+  alert('дед потерян')
+}
